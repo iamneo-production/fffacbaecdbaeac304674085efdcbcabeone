@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tic_tac_toe</title>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="tic.css">
+  <script src="tac.js"></script>
 
 </head>
 <body>
@@ -44,8 +45,23 @@
                readonly>
       </div>
       <div class="row">
-        <input type="text"
+        <input type="text" id="b7"
+               class="cell" onclick="myfunc_9(); myfunc();"
+               readonly>
+        <input type="text" id="b8"
+               class="cell" onclick="myfunc_10(); myfunc();"
+               readonly>
+        <input type="text" id="b9"
+               class="cell" onclick="myfunc_11(); myfunc();"
+               readonly>
       </div>
+  </div>
+  <br><br><br>
+  <button id="but" onclick="myfunc_2()">
+                  RESET
+  </button>
+  <br><br>
+  <p id="print"></p>
   </div>
 </body>
 </html>
